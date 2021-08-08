@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llContentFav"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <ImageView
+            android:id="@+id/imgBookIconFav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_book"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:layout_weight="7"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtBookNameFav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtAuthorFav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/inc_android"
+            android:textAlignment="center"
+            android:layout_below="@id/txtBookNameFav"
+            android:padding="3dp"
+            android:textColor="#757575"/>
+
+            <TextView
+                android:id="@+id/txtPriceFav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/rs_499"
+                android:textAlignment="center"
+                android:layout_below="@+id/txtAuthorFav"
+                android:padding="3dp"
+                android:textColor="#33691e"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txtPriceFav"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:id="@+id/imgFavourites"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/star_ic"
+                    android:padding="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="-5dp"/>
+            <TextView
+                android:id="@+id/txtRatingFav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/_4_5"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:layout_marginLeft="-5dp"
+                android:textColor="#ffd600"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
